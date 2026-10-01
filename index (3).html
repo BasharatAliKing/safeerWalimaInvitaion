@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Walima Invitation</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600&family=Amiri&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ============ EDIT YOUR DETAILS HERE ============ -->
+    <script>
+      const CONFIG = {
+        studio: "Awan Studio",
+        name: "Safeer Ali",
+        subtitle: "D/O Zulfiqar Ali",
+        eventName: "Walima",
+        dateISO: "22 Nov 2026",
+        dateText: ["22nd", "November", "2026"],
+        venue: "Garrison Golf & Country Club",
+        address: "Hall Number 09, Garrison Golf & Country Club, Near Army Museum, Lahore",
+        mapUrl: "https://maps.app.goo.gl/doRxfxPV8qxBjaGDA",
+        times: [
+          ["ARRIVAL", "12:00 PM"],
+          ["FUNCTION HALL", "1:00 – 3:00 PM"],
+          ["LUNCH", "3:15 PM"],
+        ],
+        whatsapp: "923041214513",
+        photos: ["/couple.webp", "/img1.webp", "/img2.webp", "/img3.webp"], // put your photos in /img
+      };
+    </script>
+    <!-- ================================================= -->
+
+    <div id="cover" role="button" tabindex="0" aria-label="Open the invitation">
+      <div class="brand">
+        <b data-t="studio"></b><span>DIGITAL INVITATIONS</span>
+      </div>
+      <div class="env">
+        <div class="e-body"></div>
+        <div class="e-card"></div>
+        <div class="e-l"></div>
+        <div class="e-r"></div>
+        <div class="e-b"></div>
+        <div class="e-top">
+          <div class="e-t" style="inset: 0; height: 100%"></div>
+        </div>
+        <div class="seal">❦</div>
+        <span class="orn l">❧</span><span class="orn r">☙</span>
+      </div>
+      <div class="tap">TAP TO OPEN THE INVITATION</div>
+    </div>
+
+    <nav>
+      <div class="brand">
+        <b data-t="studio"></b><span>DIGITAL INVITATIONS</span>
+      </div>
+      <div class="lb">
+        <a href="#home">Home</a><a href="#date">Date</a
+        ><a href="#events">Events</a><a href="#wishes">Wishes</a>
+      </div>
+    </nav>
+
+    <section id="home" class="botan">
+      <div class="card">
+        <div class="lb">Together with joy</div>
+        <p class="s">
+          We invite you to our <span data-t="eventName"></span> celebration
+        </p>
+        <h1 data-t="name"></h1>
+        <div class="dot">❦</div>
+        <h1 data-t="subtitle"></h1>
+        <i
+          >request the honour of your presence as two families come together in
+          celebration</i
+        >
+        <div
+          class="lb"
+          style="margin-top: 22px; font-size: 7px; color: var(--gold)"
+        >
+          A celebration awaits…
+        </div>
+      </div>
+    </section>
+
+    <section id="date">
+      <div class="lb">Save the date</div>
+      <h2 style="margin-top: 10px">A Day of Celebration</h2>
+      <p style="font-style: italic; font-size: 14px; color: #7a6652">
+        Scratch the heart to uncover the day.
+      </p>
+      <svg width="0" height="0" style="position: absolute">
+        <clipPath id="heart" clipPathUnits="objectBoundingBox">
+          <path
+            d="M0.5,0.96 C0.08,0.66 0,0.42 0,0.28 C0,0.1 0.14,0 0.28,0 C0.38,0 0.46,0.05 0.5,0.15 C0.54,0.05 0.62,0 0.72,0 C0.86,0 1,0.1 1,0.28 C1,0.42 0.92,0.66 0.5,0.96 Z"
+          />
+        </clipPath>
+      </svg>
+      <div class="scratch">
+        <div class="in">
+          <div class="u">
+            <b id="dd"></b><span id="m"></span
+            ><span id="y" style="font-size: 11px"></span>
+          </div>
+          <canvas
+            id="scr"
+            aria-label="Scratch the heart to reveal the date"
+          ></canvas>
+        </div>
+      </div>
+      <div
+        class="lb"
+        style="color: #8a7a68; font-size: 7px"
+        data-t="eventUp"
+      ></div>
+      <div class="bigm" id="bm"></div>
+    </section>
+
+    <section id="photo">
+      <div class="frame">
+        <img
+          class="ph"
+          data-p="0"
+          alt="The couple"
+          onerror="this.removeAttribute('src')"
+        />
+      </div>
+      <p class="cap">Two hearts, one beginning</p>
+    </section>
+
+    <section class="botan">
+      <div class="dot">❦</div>
+      <p class="ar">
+        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا
+      </p>
+      <p class="verse">
+        “And among His signs is that He created for you from yourselves spouses
+        that you may find tranquility in them, and He placed between you
+        affection and mercy.”
+      </p>
+      <div class="lb" style="margin-top: 10px; font-size: 7px">Quran 30:21</div>
+    </section>
+
+    <section style="background: var(--cream)">
+      <div class="lb">Photographs</div>
+      <h2 style="margin-top: 8px">Our Moments</h2>
+      <div class="moments">
+        <img
+          class="ph"
+          data-p="1"
+          alt="Couple"
+          onerror="this.removeAttribute('src')"
+        />
+        <img
+          class="ph"
+          data-p="2"
+          alt="Couple"
+          onerror="this.removeAttribute('src')"
+        />
+        <img
+          class="ph"
+          data-p="3"
+          alt="Couple"
+          onerror="this.removeAttribute('src')"
+        />
+      </div>
+    </section>
+
+    <section id="count">
+      <div class="lb" style="font-size: 7px">Until we celebrate</div>
+      <div class="cd">
+        <div><b id="cd">–</b><span>DAYS</span></div>
+        <div><b id="ch">–</b><span>HOURS</span></div>
+        <div><b id="cm">–</b><span>MINUTES</span></div>
+        <div><b id="cs">–</b><span>SECONDS</span></div>
+      </div>
+    </section>
+
+    <section id="events">
+      <div class="lb" style="font-size: 7px">The festivity</div>
+      <h2>The <span data-t="eventName"></span></h2>
+      <div class="lb" id="evd" style="font-size: 8px"></div>
+      <div class="big" data-t="eventUp"></div>
+      <div class="dot">❁</div>
+      <div class="lb" style="font-size: 7px">Night Function</div>
+      <p
+        class="lb"
+        style="margin-top: 6px; font-size: 8px; color: #f3ead8"
+        data-t="venue"
+      ></p>
+      <p
+        class="lb"
+        style="font-size: 8px; color: #f3ead8; font-weight: 400"
+        data-t="address"
+      ></p>
+      <div class="times" id="times"></div>
+      <a class="link" id="map" target="_blank" rel="noopener"
+        >VIEW LOCATION ↗</a
+      >
+    </section>
+
+    <section id="wishes">
+      <div class="lb">Guest wishes</div>
+      <h2 style="margin-top: 8px">Leave a Wish</h2>
+      <p style="font-style: italic; font-size: 14px; color: #7a6652">
+        Share a few words with the couple.
+      </p>
+      <div class="wrap two">
+        <form class="fcard" id="wf">
+          <label class="lb" for="wn">Your name</label
+          ><input type="text" id="wn" required maxlength="60" />
+          <label class="lb" for="ww">Your wish</label
+          ><textarea id="ww" required maxlength="400"></textarea>
+          <button class="btn">SEND WISH</button>
+          <div class="msg" id="wm"></div>
+        </form>
+        <div class="wl">
+          <h3>With Love From Our Guests</h3>
+          <div id="wl"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp">
+      <div class="lb" style="font-size: 7px">Kindly reply</div>
+      <h2 style="margin-top: 8px">RSVP</h2>
+      <p style="font-style: italic; font-size: 14px; opacity: 0.8">
+        We would be delighted to celebrate with you.
+      </p>
+      <form class="fcard" id="rf" style="text-align: left">
+        <label class="lb" for="rn">Your name</label
+        ><input type="text" id="rn" required maxlength="60" />
+        <label class="lb">Will you be joining us?</label>
+        <div class="ch">
+          <label
+            ><input type="radio" name="a" value="y" checked />✓ JOYFULLY
+            ACCEPT</label
+          >
+          <label
+            ><input type="radio" name="a" value="n" />✕ REGRETFULLY
+            DECLINE</label
+          >
+        </div>
+        <button class="btn">SEND RSVP</button>
+        <div class="msg" id="rm"></div>
+      </form>
+    </section>
+
+    <section
+      id="end"
+      class="botan"
+      style="background: linear-gradient(#b99a85, #8e6a5c)"
+    >
+      <div class="card">
+        <p style="font-style: italic; font-size: 17px; color: #6d5a4a">
+          We would be honoured to celebrate this beautiful evening with you.
+        </p>
+        <p style="font-size: 22px; margin-top: 16px" data-t="name"></p>
+        <p style="font-size: 19px" data-t="subtitle"></p>
+        <div class="lb" style="font-size: 7px; margin: 10px 0">
+          11 October 2026
+        </div>
+        <div class="lb" style="font-size: 6px; color: #8a7a68">
+          For any queries or information
+        </div>
+        <a class="wa lb" id="wa" target="_blank" rel="noopener">CONTACT US</a>
+        <div class="brand" style="margin-top: 22px; color: #6b5a48">
+          <b data-t="studio"></b><span>DIGITAL INVITATIONS</span>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const $ = (s) => document.querySelector(s),
+        C = CONFIG,
+        D = new Date(C.dateISO);
+      const T = { ...C, eventUp: C.eventName.toUpperCase() };
+      document
+        .querySelectorAll("[data-t]")
+        .forEach((e) => (e.textContent = T[e.dataset.t]));
+      document
+        .querySelectorAll("[data-p]")
+        .forEach((i) => (i.src = C.photos[i.dataset.p] || ""));
+      document.title = `${C.name} — ${C.eventName} Invitation`;
+      $("#dd").textContent = C.dateText[0];
+      $("#m").textContent = C.dateText[1];
+      $("#y").textContent = C.dateText[2];
+      $("#bm").innerHTML =
+        `${C.dateText[1].toUpperCase()}<div class="yr">${C.dateText[2].slice(0, 2)} <b>${C.dateText[2].slice(2)}</b></div>`;
+      $("#evd").textContent =
+        `${D.getDate()} ${C.dateText[1]} ${C.dateText[2]}`.toUpperCase();
+      $("#times").innerHTML = C.times
+        .map((t) => `<div><small>${t[0]}</small>${t[1]}</div>`)
+        .join("");
+      $("#map").href = C.mapUrl;
+      $("#wa").href = "https://wa.me/" + C.whatsapp;
+
+      const cv = $("#cover"),
+        open = () => cv.classList.add("open");
+      cv.onclick = open;
+      cv.onkeydown = (e) => (e.key === "Enter" || e.key === " ") && open();
+
+      function tick() {
+        const ms = Math.max(0, D - Date.now()),
+          p = (n) => String(n).padStart(2, "0");
+        $("#cd").textContent = p(Math.floor(ms / 864e5));
+        $("#ch").textContent = p(Math.floor(ms / 36e5) % 24);
+        $("#cm").textContent = p(Math.floor(ms / 6e4) % 60);
+        $("#cs").textContent = p(Math.floor(ms / 1e3) % 60);
+      }
+      tick();
+      setInterval(tick, 1000);
+
+      (function () {
+        const c = $("#scr"),
+          x = c.getContext("2d");
+        let down = false;
+        function paint() {
+          const r = c.getBoundingClientRect();
+          c.width = r.width;
+          c.height = r.height;
+          const g = x.createLinearGradient(0, 0, c.width, c.height);
+          g.addColorStop(0, "#f4c6cf");
+          g.addColorStop(0.5, "#e8aeb8");
+          g.addColorStop(1, "#cfa05f");
+          x.fillStyle = g;
+          x.fillRect(0, 0, c.width, c.height);
+        }
+        const at = (e) => {
+          if (!down) return;
+          const r = c.getBoundingClientRect();
+          x.globalCompositeOperation = "destination-out";
+          x.beginPath();
+          x.arc(e.clientX - r.left, e.clientY - r.top, 18, 0, 7);
+          x.fill();
+        };
+        c.onpointerdown = (e) => {
+          down = true;
+          c.setPointerCapture(e.pointerId);
+          at(e);
+        };
+        c.onpointermove = at;
+        c.onpointerup = () => (down = false);
+        paint();
+        addEventListener("resize", () => {
+          x.globalCompositeOperation = "source-over";
+          paint();
+        });
+      })();
+
+      const ld = (k) => {
+        try {
+          return JSON.parse(localStorage.getItem(k)) || [];
+        } catch {
+          return [];
+        }
+      };
+      const sv = (k, v) => {
+        try {
+          localStorage.setItem(k, JSON.stringify(v));
+        } catch {}
+      };
+      const esc = (s) =>
+        s.replace(
+          /[&<>"']/g,
+          (c) =>
+            ({
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+              "'": "&#39;",
+            })[c],
+        );
+      const mon = (d) =>
+        d
+          .toLocaleString("en", { month: "short", day: "2-digit" })
+          .toUpperCase();
+      const sample = [
+        {
+          n: "A GUEST",
+          w: "Wishing you both a lifetime of happiness and beautiful memories.",
+          d: mon(new Date()),
+        },
+      ];
+      function show() {
+        $("#wl").innerHTML = [...ld("wishes"), ...sample]
+          .map(
+            (w) =>
+              `<div class="w">“${esc(w.w)}”<div><span class="lb">${esc(w.n).toUpperCase()}</span><span class="lb">${w.d}</span></div></div>`,
+          )
+          .join("");
+      }
+      $("#wf").onsubmit = (e) => {
+        e.preventDefault();
+        const l = ld("wishes");
+        l.unshift({
+          n: $("#wn").value.trim(),
+          w: $("#ww").value.trim(),
+          d: mon(new Date()),
+        });
+        sv("wishes", l);
+        e.target.reset();
+        show();
+        $("#wm").textContent = "Thank you! Your wish has been added.";
+      };
+      show();
+      $("#rf").onsubmit = (e) => {
+        e.preventDefault();
+        const y = e.target.a.value === "y";
+        const t = `${$("#rn").value.trim()} — ${y ? "joyfully accepts" : "regretfully declines"} the ${C.eventName} invitation (${C.dateText.join(" ")}).`;
+        $("#rm").textContent =
+          "Thank you! Opening WhatsApp to send your reply…";
+        window.open(
+          `https://wa.me/${C.whatsapp}?text=${encodeURIComponent(t)}`,
+          "_blank",
+        );
+      };
+    </script>
+  </body>
+</html>
