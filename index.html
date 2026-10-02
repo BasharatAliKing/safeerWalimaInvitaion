@@ -38,6 +38,9 @@
       };
     </script>
     <!-- ================================================= -->
+ <audio id="bgMusic" loop>
+    <source src="./audio.mp3" type="audio/mpeg">
+  </audio>
 
     <div id="cover" role="button" tabindex="0" aria-label="Open the invitation">
       <div class="brand">
@@ -303,10 +306,25 @@
       $("#map").href = C.mapUrl;
       $("#wa").href = "https://wa.me/" + C.whatsapp;
 
-      const cv = $("#cover"),
-        open = () => cv.classList.add("open");
-      cv.onclick = open;
-      cv.onkeydown = (e) => (e.key === "Enter" || e.key === " ") && open();
+     const cv = $("#cover");
+const bgMusic = $("#bgMusic");
+
+const open = () => {
+  cv.classList.add("open");
+
+  // Play background music after user clicks
+  bgMusic.play().catch((error) => {
+    console.log("Music could not start:", error);
+  });
+};
+
+cv.onclick = open;
+
+cv.onkeydown = (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    open();
+  }
+};
 
       function tick() {
         const ms = Math.max(0, D - Date.now()),
